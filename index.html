@@ -3,20 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Water Quest</title>
+  <title>Pipe Connect Puzzle</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
-    <h1>Water Quest</h1>
-    <p class="game-instructions">Collect 20 items to complete the game!</p>
+    <h1>Pipe Connect Puzzle</h1>
+    <p class="game-instructions">Rotate the pipe pieces to connect the water from the start (top-left) to the goal (bottom-right)!</p>
     <div class="stats">
-      <p>Cans Collected: <span id="current-cans">0</span></p>
-      <p>Time Left: <span id="timer">30</span>s</p>
+      <p>Rotations: <span id="rotation-count">0</span></p>
+      <p>Time: <span id="timer">0</span>s</p>
+      <p>Best: <span id="best-score">--</span></p>
     </div>
-    <div id="achievements" class="achievement"></div>
+    <div id="result-message" class="result-message"></div>
     <div class="game-grid"></div>
     <button id="start-game">Start Game</button>
+    <button id="new-game">New Game</button>
   </div>
   <script src="script.js"></script>
 </body>
